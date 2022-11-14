@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <RequireAuth>
-        <Root></Root>
+        <Root />
       </RequireAuth>
     ),
     errorElement: <ErrorPage />,
@@ -61,7 +61,7 @@ const router = createBrowserRouter([
   },
   {
     path: "*",
-    element: <p>Nemaaaaaaaaaa</p>,
+    element: <ErrorPage />,
   },
 ]);
 
